@@ -1,0 +1,56 @@
+	Gamepad controller(0, 0.2f, 0.2f, 0.2f, 0.2f);
+	Ptr<const Direction> current_dir, last_dir;
+
+	while (controller.isConnected())
+	{
+		current_dir = controller.leftStick.getDirection();
+
+		if (current_dir != last_dir)
+		{
+			if (current_dir == nullptr)
+				println("None");
+			else
+			{
+				switch (current_dir->id)
+				{
+					case Direction::NORTH:
+					println("North");
+					break;
+
+					case Direction::NORTHEAST:
+					println("Northeast");
+					break;
+
+					case Direction::EAST:
+					println("East");
+					break;
+
+					case Direction::SOUTHEAST:
+					println("Southeast");
+					break;
+
+					case Direction::SOUTH:
+					println("South");
+					break;
+
+					case Direction::SOUTHWEST:
+					println("Southwest");
+					break;
+
+					case Direction::WEST:
+					println("West");
+					break;
+
+					case Direction::NORTHWEST:
+					println("Northwest");
+					break;
+
+					default:
+					break;
+				}
+			}
+		}
+
+		last_dir = current_dir;
+		controller.update();
+	}

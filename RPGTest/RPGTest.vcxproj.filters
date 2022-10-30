@@ -1,0 +1,270 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Module Files">
+      <UniqueIdentifier>{68196f65-6dac-479f-b0fd-4c0401d21dc2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="JLibrary">
+      <UniqueIdentifier>{f119ddbf-2637-44b0-91ea-4991d0af6d33}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\JLIB\Angle.cpp">
+      <Filter>JLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\JLIB\AnimatedSprite.cpp">
+      <Filter>JLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\JLIB\Array.ixx">
+      <Filter>JLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\JLIB\BitMatrix.ixx">
+      <Filter>JLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\JLIB\Buffer.cpp">
+      <Filter>JLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\JLIB\Chance.cpp">
+      <Filter>JLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\JLIB\Circle.ixx">
+      <Filter>JLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\JLIB\Clamp.ixx">
+      <Filter>JLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\JLIB\Color.cpp">
+      <Filter>JLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\JLIB\ColumnIterator.ixx">
+      <Filter>JLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\JLIB\ComplexNumber.ixx">
+      <Filter>JLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\JLIB\Direction.cpp">
+      <Filter>JLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\JLIB\Equation.ixx">
+      <Filter>JLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\JLIB\FixedArray.ixx">
+      <Filter>JLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\JLIB\FixedGrid.ixx">
+      <Filter>JLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\JLIB\FixedMatrix.ixx">
+      <Filter>JLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\JLIB\Fraction.ixx">
+      <Filter>JLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\JLIB\Game.cpp">
+      <Filter>JLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\JLIB\Gamepad.cpp">
+      <Filter>JLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\JLIB\Hexadecimal.cpp">
+      <Filter>JLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\JLIB\LinearEquation1.ixx">
+      <Filter>JLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\JLIB\LinearEquation2.ixx">
+      <Filter>JLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\JLIB\LinearEquation3.ixx">
+      <Filter>JLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\JLIB\LineSegment.ixx">
+      <Filter>JLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\JLIB\Matrix.ixx">
+      <Filter>JLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\JLIB\MiscTemplateFunctions.ixx">
+      <Filter>JLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\JLIB\Mouse.cpp">
+      <Filter>JLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\JLIB\Plane.ixx">
+      <Filter>JLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\JLIB\Polynomial.ixx">
+      <Filter>JLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\JLIB\Ptr.ixx">
+      <Filter>JLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\JLIB\Rect.ixx">
+      <Filter>JLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\JLIB\SFML_JLIB.ixx">
+      <Filter>JLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\JLIB\Sphere.ixx">
+      <Filter>JLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\JLIB\Square.ixx">
+      <Filter>JLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\JLIB\String.cpp">
+      <Filter>JLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\JLIB\Time.cpp">
+      <Filter>JLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\JLIB\Triangle.ixx">
+      <Filter>JLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\JLIB\Vector2.ixx">
+      <Filter>JLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\JLIB\Vector3.ixx">
+      <Filter>JLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\JLIB\VectorEquation3.ixx">
+      <Filter>JLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\JLIB\VectorN.ixx">
+      <Filter>JLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\JLIB\InputBuffer.ixx">
+      <Filter>JLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="InputManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="State.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Room.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SFMLFunctions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IDClass.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OverworldState.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RPGGame.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\JLIB\Angle.hpp">
+      <Filter>JLibrary</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\JLIB\AnimatedSprite.hpp">
+      <Filter>JLibrary</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\JLIB\Arithmetic.hpp">
+      <Filter>JLibrary</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\JLIB\Buffer.hpp">
+      <Filter>JLibrary</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\JLIB\Chance.hpp">
+      <Filter>JLibrary</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\JLIB\Color.hpp">
+      <Filter>JLibrary</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\JLIB\Constants.hpp">
+      <Filter>JLibrary</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\JLIB\Conversions.hpp">
+      <Filter>JLibrary</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\JLIB\Direction.hpp">
+      <Filter>JLibrary</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\JLIB\Game.hpp">
+      <Filter>JLibrary</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\JLIB\Gamepad.hpp">
+      <Filter>JLibrary</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\JLIB\Hexadecimal.hpp">
+      <Filter>JLibrary</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\JLIB\IntegerTypedefs.hpp">
+      <Filter>JLibrary</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\JLIB\JLIB.hpp">
+      <Filter>JLibrary</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\JLIB\Literals.hpp">
+      <Filter>JLibrary</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\JLIB\Mouse.hpp">
+      <Filter>JLibrary</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\JLIB\String.hpp">
+      <Filter>JLibrary</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\JLIB\Time.hpp">
+      <Filter>JLibrary</Filter>
+    </ClInclude>
+    <ClInclude Include="IDObject.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RPGGame.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="InputManager.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="State.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OverworldState.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Collision.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Room.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SFMLFunctions.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GameConstants.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resources.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Entity.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

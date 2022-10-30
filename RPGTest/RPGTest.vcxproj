@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{bc816501-b048-43fb-ba03-a772aa7cc0ce}</ProjectGuid>
+    <RootNamespace>RPGTest</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>E:\JLIB;$(IncludePath)</IncludePath>
+    <SourcePath>E:\JLIB;$(SourcePath)</SourcePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>E:\JLIB;$(IncludePath)</IncludePath>
+    <SourcePath>E:\JLIB;$(SourcePath)</SourcePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>E:\JLIB;$(IncludePath)</IncludePath>
+    <SourcePath>E:\JLIB;$(SourcePath)</SourcePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>E:\JLIB;$(IncludePath)</IncludePath>
+    <SourcePath>E:\JLIB;$(SourcePath)</SourcePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)NOMINMAX</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalModuleDependencies>%(AdditionalModuleDependencies)</AdditionalModuleDependencies>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)NOMINMAX</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalModuleDependencies>%(AdditionalModuleDependencies)</AdditionalModuleDependencies>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)NOMINMAX</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalModuleDependencies>%(AdditionalModuleDependencies)</AdditionalModuleDependencies>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)NOMINMAX</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalModuleDependencies>%(AdditionalModuleDependencies)</AdditionalModuleDependencies>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\JLIB\Angle.cpp" />
+    <ClCompile Include="..\..\JLIB\AnimatedSprite.cpp" />
+    <ClCompile Include="..\..\JLIB\Array.ixx" />
+    <ClCompile Include="..\..\JLIB\BitMatrix.ixx" />
+    <ClCompile Include="..\..\JLIB\Buffer.cpp" />
+    <ClCompile Include="..\..\JLIB\Chance.cpp" />
+    <ClCompile Include="..\..\JLIB\Circle.ixx" />
+    <ClCompile Include="..\..\JLIB\Clamp.ixx" />
+    <ClCompile Include="..\..\JLIB\Color.cpp" />
+    <ClCompile Include="..\..\JLIB\ColumnIterator.ixx" />
+    <ClCompile Include="..\..\JLIB\ComplexNumber.ixx" />
+    <ClCompile Include="..\..\JLIB\Direction.cpp" />
+    <ClCompile Include="..\..\JLIB\Equation.ixx" />
+    <ClCompile Include="..\..\JLIB\FixedArray.ixx" />
+    <ClCompile Include="..\..\JLIB\FixedGrid.ixx" />
+    <ClCompile Include="..\..\JLIB\FixedMatrix.ixx" />
+    <ClCompile Include="..\..\JLIB\Fraction.ixx" />
+    <ClCompile Include="..\..\JLIB\Game.cpp" />
+    <ClCompile Include="..\..\JLIB\Gamepad.cpp" />
+    <ClCompile Include="..\..\JLIB\Hexadecimal.cpp" />
+    <ClCompile Include="..\..\JLIB\InputBuffer.ixx" />
+    <ClCompile Include="..\..\JLIB\LinearEquation1.ixx" />
+    <ClCompile Include="..\..\JLIB\LinearEquation2.ixx" />
+    <ClCompile Include="..\..\JLIB\LinearEquation3.ixx" />
+    <ClCompile Include="..\..\JLIB\LineSegment.ixx" />
+    <ClCompile Include="..\..\JLIB\Matrix.ixx" />
+    <ClCompile Include="..\..\JLIB\MiscTemplateFunctions.ixx" />
+    <ClCompile Include="..\..\JLIB\Mouse.cpp" />
+    <ClCompile Include="..\..\JLIB\Plane.ixx" />
+    <ClCompile Include="..\..\JLIB\Polynomial.ixx" />
+    <ClCompile Include="..\..\JLIB\Ptr.ixx" />
+    <ClCompile Include="..\..\JLIB\Rect.ixx" />
+    <ClCompile Include="..\..\JLIB\SFML_JLIB.ixx" />
+    <ClCompile Include="..\..\JLIB\Sphere.ixx" />
+    <ClCompile Include="..\..\JLIB\Square.ixx" />
+    <ClCompile Include="..\..\JLIB\String.cpp" />
+    <ClCompile Include="..\..\JLIB\Time.cpp" />
+    <ClCompile Include="..\..\JLIB\Triangle.ixx" />
+    <ClCompile Include="..\..\JLIB\Vector2.ixx" />
+    <ClCompile Include="..\..\JLIB\Vector3.ixx" />
+    <ClCompile Include="..\..\JLIB\VectorEquation3.ixx" />
+    <ClCompile Include="..\..\JLIB\VectorN.ixx" />
+    <ClCompile Include="IDClass.cpp" />
+    <ClCompile Include="InputManager.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="OverworldState.cpp" />
+    <ClCompile Include="Player.cpp" />
+    <ClCompile Include="Room.cpp" />
+    <ClCompile Include="RPGGame.cpp" />
+    <ClCompile Include="SFMLFunctions.cpp" />
+    <ClCompile Include="State.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\JLIB\Angle.hpp" />
+    <ClInclude Include="..\..\JLIB\AnimatedSprite.hpp" />
+    <ClInclude Include="..\..\JLIB\Arithmetic.hpp" />
+    <ClInclude Include="..\..\JLIB\Buffer.hpp" />
+    <ClInclude Include="..\..\JLIB\Chance.hpp" />
+    <ClInclude Include="..\..\JLIB\Color.hpp" />
+    <ClInclude Include="..\..\JLIB\Constants.hpp" />
+    <ClInclude Include="..\..\JLIB\Conversions.hpp" />
+    <ClInclude Include="..\..\JLIB\Direction.hpp" />
+    <ClInclude Include="..\..\JLIB\Game.hpp" />
+    <ClInclude Include="..\..\JLIB\Gamepad.hpp" />
+    <ClInclude Include="..\..\JLIB\Hexadecimal.hpp" />
+    <ClInclude Include="..\..\JLIB\IntegerTypedefs.hpp" />
+    <ClInclude Include="..\..\JLIB\JLIB.hpp" />
+    <ClInclude Include="..\..\JLIB\Literals.hpp" />
+    <ClInclude Include="..\..\JLIB\Mouse.hpp" />
+    <ClInclude Include="..\..\JLIB\String.hpp" />
+    <ClInclude Include="..\..\JLIB\Time.hpp" />
+    <ClInclude Include="Collision.hpp" />
+    <ClInclude Include="Entity.hpp" />
+    <ClInclude Include="GameConstants.hpp" />
+    <ClInclude Include="IDObject.hpp" />
+    <ClInclude Include="InputManager.hpp" />
+    <ClInclude Include="OverworldState.hpp" />
+    <ClInclude Include="Player.hpp" />
+    <ClInclude Include="Resources.hpp" />
+    <ClInclude Include="Room.hpp" />
+    <ClInclude Include="RPGGame.hpp" />
+    <ClInclude Include="SFMLFunctions.hpp" />
+    <ClInclude Include="State.hpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
