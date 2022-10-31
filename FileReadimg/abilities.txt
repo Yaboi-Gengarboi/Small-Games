@@ -1,0 +1,306 @@
+Adaptability
+Increases the power of moves with a different type than the user by 33.33%.
+Aftermath
+Damages an attacking pokemon by half of their maximum HP when a direct attack causes the pokemon to faint.
+Air Lock
+The pokemon clears the weather upon entering battle and prevents the weather from being changed.
+Analytic
+The power of the pokemon's moves are increased by 30%, but it always moves last.
+Anger Point
+Doubles the pokemon’s attack and special attack when it reaches half health.
+Arena Trap
+Prevents opposing pokemon from fleeing or switching out. Ineffective against Flying-type pokemon, Ghost-type pokemon, and pokemon with the Levitate ability.
+Bad Dreams
+Damages sleeping pokemon by 12.5% of their maximum HP every turn.
+Battle Armor
+Protects the pokemon from critical hits.
+Big Pecks
+When an opposing pokemon lowers one of the pokemon's stats, the pokemon's Defense stat is increased by 2 stages.
+Blaze
+Raises the power of Fire-type moves by 33.33%.
+Chlorophyll
+Doubles the pokemon's speed stat in harsh sunlight.
+Clear Body
+Protects the pokemon from opposing pokemons' stat-lowering moves and abilities.
+Color Change
+Changes the pokemon's type to the type of the move that just hit it.
+Competitive
+When an opposing pokemon lowers one of the pokemon's stats, the pokemon's Special Attack stat is increased by 2 stages.
+Compound Eyes
+Raises the pokemon's accuracy by 30%.
+Contrary
+Stat changes have the opposite effect on the pokemon.
+Cursed Body
+Opposing pokemons' moves have a 30% chance of being disabled for 3 turns if they hit.
+Cute Charm
+Opposing pokemon have a 50% chance to become infatuated when they land a direct attack on the pokemon.
+Damp
+Prevents any pokemon in battle from using self-sacrificing moves.
+Defeatist
+Increases the pokemon’s attack and special attack by 35% when it is above half health, but decreases it by 20% when it is below half health.
+Defiant
+When an opposing pokemon lowers one of the pokemon's stats, the pokemon's Attack stat is increased by 2 stages.
+Download
+Raises the pokemon's Attack or Special Attack stat by 1 stage in accordance with an opposing pokemon's weakest defensive stat.
+Drizzle
+The pokemon changes the weather to rainy weather for 8 turns upon entering battle.
+Drought
+The pokemon changes the weather to sunny weather for 8 turns upon entering battle.
+Dry Skin
+Restores 25% of the pokemon's maximum HP when hit by a Water-type move and restores 12.5% of its maximum HP per turn in rainy weather. However, the pokemon takes 25% more damage from Fire-type moves and it takes damage equal to 12.5% of its maximum HP per turn in harsh sunlight.
+Early Bird
+The pokemon wakes up after only 1 turn of sleeping.
+Effect Spore
+Opposing pokemon have a 30% chance of being slept, poisoned or paralyzed upon landing a direct attack on the pokemon.
+Filter
+Reduces the damage taken from Super-Effective attacks by 50%.
+Flame Body
+Opposing pokemon have a 50% chance of being burned upon landing a direct attack on the pokemon. Prevents the pokemon from being frozen.
+Flare Boost
+Increases the power of special moves by 50% when burned.
+Flash Fire
+When the pokemon is hit by a Fire-type move, rather than taking damage, the power of its Fire-type moves is increased by 50%.
+Flower Gift
+Raises the Attack and Special Defense stats of the pokemon and its allies by 50% in sunny weather.
+Forecast
+Changes the pokemon's type to match the weather.
+Forewarn
+The pokemon reveals opposing pokemons' moves and items upon entering battle.
+Friend Guard
+Reduces damage done to allies by 25%.
+Gluttony
+Allows the pokemon to eat a held berry at only half HP. Ignores the Unnerve ability.
+Guts
+Increases the pokemon's Attack stat by 50% when it is afflicted by a status condition.
+Harvest
+Provides a 50% chance of restoring a used berry at the end of every turn. This chance is 100% in sunny weather.
+Healer
+Prevents allies from being affected by status conditions.
+Heatproof
+Halves the damage taken from Fire-type moves and provides immunity to the burned status condition.
+Honey Gather
+The pokemon may find honey after a battle if it has no held item. The chance it finds honey corresponds to its level.
+Huge Power
+Doubles the Attack stat.
+Hustle
+Raises the Attack and Special Attack stats by 50%, but reduces the accuracy of physical and special moves by 15%.
+Hydration
+Now grants immunity to all status moves while it is raining.
+Hyper Cutter
+Prevents the Attack stat from being lowered.
+Ice Body
+Restores 6.25% of the pokemon's maximum HP every turn in hail.
+Illuminate
+Raises the pokemon's accuracy by 30%.
+Illusion
+The pokemon is disguised as the last pokemon in the party upon entering battle.
+Immunity
+Prevents the pokemon from being poisoned. Allows the pokemon to remove Toxic Spikes upon switching in.
+Imposter
+The pokemon transforms into an opposing pokemon upon entering battle.
+Infiltrator
+The pokemon ignores the effects of Light Screen, Mist, Reflect, Safeguard and Substitute.
+Insomnia
+Prevents the pokemon from falling asleep.
+Intimidate
+The pokemon lowers the opposing pokemons' Attack stat by 1 stage upon entering battle.
+Iron Barbs
+Damages an attacking pokemon by 12.5% of their maximum HP when they land a direct attack.
+Iron Fist
+Increases the power of punching moves by 30%.
+Justified
+Raises the pokemon's Attack stat by 1 stage upon being hit by a Dark-type move.
+Keen Eye
+Prevents the pokemon's Accuracy stat from being lowered. Allows the pokemon to ignore evasiveness-raising moves.
+Klutz
+Raises the Attack and Special Attack stats by 35%, but the pokemon is unable to use items.
+Leaf Guard
+Protects the pokemon from status conditions in sunny or rainy weather.
+Levitate
+The pokemon is immune to Ground-type moves.
+Lightning Rod
+Draws all Electric-type moves to the pokemon. Rather than taking damage from Electric-type moves, the pokemon's Special Attack stat is increased by 1 stage.
+Limber
+Prevents the pokemon from being paralyzed.
+Liquid Ooze
+Opposing pokemon lose HP when using an HP-draining move rather than gaining HP.
+Magic Bounce
+The pokemon reflects opposing pokemons' status moves that target the pokemon.
+Magic Guard
+The pokemon only takes damage from moves.
+Magician
+The pokemon takes an opposing pokemon's item upon hitting it with a move. This fails if the pokemon already has an item.
+Magnet Pull
+Prevents opposing Steel-type pokemon from fleeing or switching out. Innefective against Ghost-type and Dark-type pokemon.
+Marvel Scale
+The pokemon's Defense stat is increased by 50% when afflicted with a status condition.
+Minus
+Raises the Special Attack stat by 50% if another ally has Plus or Minus.
+Mold Breaker
+Allows the pokemon to hit opponents regardless of their abilities.
+Moody
+At the end of every turn, one stat is raised by 2 stages and another is lowered by 1 stage.
+Motor Drive
+Draws all Electric-type moves to the pokemon. Rather than taking damage from Electric-type moves, the pokemon's Speed stat is increased by 1 stage.
+Moxie
+The pokemon's Attack stat is raised by 1 stage upon knocking out an opposing pokemon.
+Multiscale
+Halves the damage taken when the pokemon's HP is full.
+Multitype
+The pokemon's type changes to correspond to the plate it is holding.
+Mummy
+Changes the ability of opposing pokemon that make direct contact to Mummy.
+Natural Cure
+The pokemon is cured of status conditions upon switching out.
+No Guard
+Moves used by or against the pokemon will always hit.
+Overcoat
+Protects the pokemon from the effects of weather as well as spore and powder moves.
+Overgrow
+Raises the power of Grass-type moves by 33.33%.
+Own Tempo
+Protects the pokemon from confusion, infatuation,the moves Captivate and Taunt and the Intimidate ability.
+Photosynthesis
+Restores 6.25% of the pokemon's maximum HP every turn in sunny weather.
+Pickup
+At the end of every turn, if the opposing pokemon has used an item, the pokemon will pickup the item. This fails if the pokemon is already holding an item. The pokemon may also find items after a battle if it is not holding one.
+Plus
+Raises the Special Attack stat by 50% if another ally has Plus or Minus.
+Poison Heal
+When the pokemon is poisoned, rather than taking damage, it recovers 12.5% of its maximum HP.
+Poison Point
+Opposing pokemon have a 50% chance of being poisoned upon landing a direct attack on the pokemon.
+Poison Touch
+Opposing pokemon have a 30% chance of being poisoned when the pokemon lands a direct attack.
+Prankster
+Gives extra priority to the pokemon's status moves. Dark-type pokemon are immune to moves if they are affected by Prankster.
+Pressure
+When the pokemon is hit by an opponent's move, it depletes 2 additional PP from that move.
+Quick Feet
+Doubles the Speed stat when the pokemon is affected by a status condition. Ignores the speed reduction of paralysis.
+Rain Dish
+Restores 6.25% of the pokemon's maximum HP every turn in rain.
+Rattled
+Increases the pokemon's Speed stat by 1 stage when hit by a Ghost-type, Dark-type or Bug-type move.
+Reckless
+Increases the power of moves that inflict recoil or crash damage by 20%.
+Regenerator
+The pokemon recovers 33.33% of its maximum HP when withdrawn from battle.
+Rivalry
+The pokemon deals 20% extra damage to pokemon of the same gender.
+Rock Head
+Protects the pokemon from recoil damage.
+Rough Skin
+Damages an attacking pokemon by 12.5% of their maximum HP when they land a direct attack.
+Run Away
+Allows the pokemon to always flee wild battles or switch out.
+Sand Force
+Increases the power of Rock-type, Steel-type and Ground-type moves by 30% in sandstorm weather. Protects the pokemon from sandstorm damage.
+Sand Rush
+Doubles the pokemon's Speed stat in a sandstorm. Protects the pokemon from sandstorm damage.
+Sand Stream
+The pokemon changes the weather to sandstorm weather for 8 turns upon entering battle.
+Sand Veil
+Protects the pokemon from status moves in sandstorm weather.
+Sap Sipper
+When the pokemon is hit by a Grass-type attack, rather than taking damage, the pokemon's Special Attack stat is increased by 1 stage.
+Scrappy
+Allows the pokemon to hit Ghost-type pokemon with Normal-type and Fighting-type moves.
+Serene Grace
+Doubles the chance of a move's additional affects occuring.
+Shadow Tag
+Prevents opposing pokemon from fleeing or switching out. Ineffective against Ghost-type pokemon, Dark-type pokemon, and opposing pokemon with Shadow Tag.
+Shed Skin
+The pokemon has a 33.33% chance to be cured of a status condition at the end of every turn.
+Sheer Force
+Increases the power of moves with additional effects by 30%, but the additional effects are lost.
+Shield Dust
+Protects the pokemon from the additional effects of moves.
+Simple
+Doubles the effect of stat changes on the pokemon.
+Skill Link
+Moves of the pokemon that hit multiple times will always strike the maximum amount of times.
+Slush Rush
+Doubles the pokemon's Speed stat by 50% in a hailstorm. Protects the pokemon from hail damage.
+Sniper
+Doubles the damage dealt by critical hits.
+Snow Cloak
+Protects the pokemon from status moves in a hailstorm.
+Snow Warning
+The pokemon changes the weather to hail for 8 turns upon entering battle.
+Solar Power
+In sunny weather, the pokemon's Special Attack stat is increased by 50%, but it takes damage equal to 12.5% of its maximum HP every turn.
+Solid Rock
+Reduces the damage taken from Super-Effective attacks by 50%.
+Soundproof
+Protects the pokemon from sound-based moves.
+Specialist
+Raises the power of moves with the same type as the user by 33.33%.
+Speed Boost
+The pokemon's Speed stat is increased by 1 stage upon dealing damage.
+Static
+Opposing pokemon have a 50% chance of being paralyzed upon landing a direct attack on the pokemon. Protects the pokemon from being paralyzed.
+Steadfast
+Rather than flinching, the pokemon's Speed stat is increased by 1 stage.
+Stench
+Opposing pokemon have a 20% chance to flinch when the pokemon uses a move to deal damage.
+Sticky Hold
+Prevents the pokemon's item from being taken or forcefully discarded.
+Storm Drain
+Draws all Water-type moves to the pokemon. Rather than taking damage from Water-type moves, the pokemon's Special Attack stat is increased by 1 stage.
+Strong Jaw
+Increases the power of bite and fang moves by 50%.
+Sturdy
+Prevents the pokemon from fainting after being hit by 1 move, leaving it with just 1 HP left. Protects the pokemon from OHKO moves.
+Suction Cups
+Prevents the pokemon from being forcefully switched out.
+Super Luck
+Doubles the pokemon's chance to get a critical hit.
+Swarm
+Raises the power of Bug-type moves by 33.33%.
+Swift Swim
+Doubles the pokemon's speed stat in rain.
+Symbiosis
+When an ally uses an item, the pokemon gives its own item to the ally.
+Synchronize
+When the pokemon is inflicted with a status condition, it inflicts its opponents with the same status condition.
+Technician
+Moves with a base power of 60 or less have their base power increased by 50%.
+Telepathy
+Prevents the pokemon from taking damage from an ally's move.
+Thick Fat
+Halves the damage taken from Fire-type and Ice-type moves.
+Tinted Lens
+Doubles the damage dealt by not-very-effective moves.
+Torrent
+Raises the power of Water-type moves by 33.33%.
+Toxic Boost
+Increases the pokemon's Attack and Speed stats by 50% when it is poisoned.
+Trace
+The pokemon copies the ability of an opponent.
+Truant
+The pokemon can only use moves that deal damage every other turn.
+Unaware
+The pokemon ignores the stat changes of opposing pokemon, except for the Speed stat.
+Unburden
+The pokemon's Speed stat is doubled if it loses or consumes a held item.
+Unnerve
+Prevents opposing pokemon from consuming berries.
+Victory Star
+Increases the accuracy of the pokemon and its allies by 10%.
+Volt Absorb
+When the pokemon is hit by an Electric-type move, rather than taking damage, it recovers 35% of its maximum HP.
+Water Absorb
+When the pokemon is hit by an Water-type move, rather than taking damage, it recovers 35% of its maximum HP.
+Water Veil
+Prevents the pokemon from being burned.
+Weak Armor
+When the pokemon is hit by a physical attack, its Defense is decreased by 1 stage, but its Speed is increased by 2 stages.
+White Smoke
+Protects the pokemon from opposing pokemons' stat-lowering moves and abilities.
+Wonder Guard
+The pokemon only takes damage from super-effective moves.
+Wonder Skin
+Opposing pokemons' status moves have a 30% extra chance to miss if the pokemon is the target.
+Zen Mode
+The pokemon changes form when it loses over half HP.
