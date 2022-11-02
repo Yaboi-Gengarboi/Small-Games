@@ -1,7 +1,7 @@
 // RPGTest
 // OverworldState.cpp
 // Created on 2022-10-12 by Justyn Durnford
-// Last modified on 2022-10-27 by Justyn Durnford
+// Last modified on 2022-11-01 by Justyn Durnford
 // Source file for the OverworldState class.
 
 #pragma warning( disable : 4244 ) 
@@ -153,6 +153,10 @@ OverworldState::OverworldState(const path& folder, Ptr<RenderWindow> new_window,
 void OverworldState::update(Duration dt)
 {
 	inputManager->update(window);
+
+	if (inputManager->getKeyState(Keyboard::Escape))
+		next = State::NextState::EXIT;
+
 	player.update(dt);
 
 	camera.setCenter(player.position.x + PLAYER_SPRITE_WIDTH / 2.0f, player.position.y + PLAYER_SPRITE_HEIGHT / 2.0f);
@@ -160,7 +164,18 @@ void OverworldState::update(Duration dt)
 
 void OverworldState::render()
 {
-	window->draw(room->sprite);
-	window->setView(camera);
-	player.render(*window);
+	if (window)
+	{
+		window->draw(room->sprite);
+		window->setView(camera);
+		player.render(*window);
+	}
+}
+
+void OverworldState::end()
+{
+	if (window)
+	{
+		window->clear(sf::Color::Black);
+	}
 }

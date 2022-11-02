@@ -1,7 +1,7 @@
 // RPGTest
 // Player.cpp
 // Created on 2022-10-04 by Justyn Durnford
-// Last modified on 2022-10-29 by Justyn Durnford
+// Last modified on 2022-11-01 by Justyn Durnford
 // Source file for the Player class.
 
 #pragma warning( disable : 4244 ) 
@@ -168,10 +168,10 @@ void Player::move(float vel_x, float vel_y, Duration dt)
             case Direction::NORTHWEST:
 
             if (room->getTileCollision(new_position.x, new_position.y) != Collision::EMPTY)
-                new_position.x = (tile.x + 1) * TILE_LENGTH * SCALE;
+                new_position.y = (tile.y + 1) * TILE_LENGTH * SCALE;
 
             if (room->getTileCollision(new_position.x, new_position.y) != Collision::EMPTY)
-                new_position.y = (tile.y + 1) * TILE_LENGTH * SCALE;
+                new_position.x = (tile.x + 1) * TILE_LENGTH * SCALE;
 
             break;
 

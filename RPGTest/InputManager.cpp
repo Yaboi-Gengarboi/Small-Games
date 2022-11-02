@@ -1,7 +1,7 @@
 // RPGTest
 // InputManager.cpp
 // Created on 2022-09-30 by Justyn Durnford
-// Last modified on 2022-10-11 by Justyn Durnford
+// Last modified on 2022-11-01 by Justyn Durnford
 // Source file for the InputManager class.
 
 #ifndef NOMINMAX
@@ -49,6 +49,7 @@ InputManager::InputManager()
 	keyStates[Keyboard::Key::LControl] = 0;
 	keyStates[Keyboard::Key::Tab] = 0;
 	keyStates[Keyboard::Key::Escape] = 0;
+	keyStates[Keyboard::Key::Enter] = 0;
 
 	buttonStates[Gamepad::Button::A] = 0;
 	buttonStates[Gamepad::Button::B] = 0;
