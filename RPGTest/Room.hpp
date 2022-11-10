@@ -1,44 +1,22 @@
 // RPGTest
 // Room.hpp
 // Created on 2022-10-04 by Justyn Durnford
-// Last modified on 2022-10-28 by Justyn Durnford
+// Last modified on 2022-11-09 by Justyn Durnford
 // Header file for the Room class.
 
 #pragma once
 
-#include "IntegerTypedefs.hpp"
-using jlib::u8;
-using jlib::u16;
+#include "Namespace.hpp"
 
-#include "Collision.hpp"
 #include "IDObject.hpp"
 
-#include <SFML/Graphics/Sprite.hpp>
-using sf::Sprite;
-
-#include <SFML/Graphics/Texture.hpp>
-using sf::Texture;
-
-#include <filesystem>
-using std::filesystem::path;
-using std::filesystem::exists;
-
-#include <string>
-using std::string;
-using std::wstring;
-
-#include <unordered_map>
-using std::unordered_map;
-
-import Matrix;
-using jlib::Matrix;
-
-import Ptr;
-using jlib::Ptr;
-
-import Vector2;
-using jlib::Vector2f;
-using jlib::Vector2uz;
+enum Collision : u8
+{
+	EMPTY = 0,
+	LOADZONE = 1,
+	SOLID = 2,
+	WATER = 3
+};
 
 // 
 class Room : public IDObject

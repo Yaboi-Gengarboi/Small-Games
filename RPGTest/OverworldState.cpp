@@ -1,10 +1,8 @@
 // RPGTest
 // OverworldState.cpp
 // Created on 2022-10-12 by Justyn Durnford
-// Last modified on 2022-11-01 by Justyn Durnford
+// Last modified on 2022-11-09 by Justyn Durnford
 // Source file for the OverworldState class.
-
-#pragma warning( disable : 4244 ) 
 
 #include "GameConstants.hpp"
 #include "Mouse.hpp"
@@ -12,26 +10,6 @@
 #include "Resources.hpp"
 #include "Room.hpp"
 #include "SFMLFunctions.hpp"
-
-#include <filesystem>
-using std::filesystem::path;
-using std::filesystem::exists;
-
-#include <fstream>
-using std::ifstream;
-
-#include <iostream>
-using std::cout;
-using std::wcout;
-using std::wcerr;
-
-#include <string>
-using std::string;
-using std::wstring;
-using std::getline;
-using std::stoi;
-using std::to_string;
-using std::to_wstring;
 
 OverworldState::OverworldState() : State()
 {
@@ -95,7 +73,7 @@ OverworldState::OverworldState(const path& folder, Ptr<RenderWindow> new_window,
 		dir_id = stoi(line);
 
 		#ifdef _DEBUG
-		cout << to_string(new_id) << '\n';
+		cout << to_string(dir_id) << '\n';
 		#endif // #ifdef _DEBUG
 	}
 	catch (...)
@@ -169,11 +147,44 @@ void OverworldState::render()
 		window->draw(room->sprite);
 		window->setView(camera);
 		player.render(*window);
+
+		#ifdef _DEBUG
+		
+		if (player.isMoving())
+			cout << "Pos: " << to_string(player.position) << "   ||   Vel: " << to_string(player.velocity) << '\n';
+
+		#endif // #ifdef _DEBUG
 	}
 }
 
-void OverworldState::end()
+void OverworldState::end(const path& folder)
 {
+	path file(folder / L"save_data.txt");
+
+	if (!exists(file))
+		Player::loadFail(file, wstring(L"Could not locate file: ") + file.wstring());
+
+	ifstream fin(file);
+	vector<string> lines;
+	string line;
+
+	while (getline(fin, line))
+		lines.push_back(line);
+
+	if (player.currentDirection)
+		lines[2] = to_string(player.currentDirection->id);
+
+	lines[4] = to_string(player.position);
+
+	fin.close();
+
+	ofstream fout(file);
+
+	for (size_t i = 0; i < lines.size(); ++i)
+		fout << lines[i] << '\n';
+
+	fout.close();
+
 	if (window)
 	{
 		window->clear(sf::Color::Black);

@@ -1,7 +1,7 @@
 // RPGTest
 // OverworldState.hpp
 // Created on 2022-09-30 by Justyn Durnford
-// Last modified on 2022-11-01 by Justyn Durnford
+// Last modified on 2022-11-05 by Justyn Durnford
 // Header file for the OverworldState class.
 
 #pragma once
@@ -40,5 +40,5 @@ class OverworldState : public State
 	void render();
 
 	// 
-	void end();
+	void end(const path& folder);
 };

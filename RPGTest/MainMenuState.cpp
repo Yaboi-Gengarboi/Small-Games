@@ -1,7 +1,7 @@
 // RPGTest
 // MainMenuState.hpp
 // Created on 2022-10-30 by Justyn Durnford
-// Last modified on 2022-11-01 by Justyn Durnford
+// Last modified on 2022-11-02 by Justyn Durnford
 // Header file for the MainMenuState class.
 
 #include "MainMenuState.hpp"
@@ -58,7 +58,7 @@ void MainMenuState::render()
 	}
 }
 
-void MainMenuState::end()
+void MainMenuState::end(const path& folder)
 {
 	if (window)
 	{

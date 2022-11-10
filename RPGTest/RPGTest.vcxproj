@@ -227,12 +227,12 @@
     <ClInclude Include="..\..\JLIB\Mouse.hpp" />
     <ClInclude Include="..\..\JLIB\String.hpp" />
     <ClInclude Include="..\..\JLIB\Time.hpp" />
-    <ClInclude Include="Collision.hpp" />
     <ClInclude Include="Entity.hpp" />
     <ClInclude Include="GameConstants.hpp" />
     <ClInclude Include="IDObject.hpp" />
     <ClInclude Include="InputManager.hpp" />
     <ClInclude Include="MainMenuState.hpp" />
+    <ClInclude Include="Namespace.hpp" />
     <ClInclude Include="OverworldState.hpp" />
     <ClInclude Include="Player.hpp" />
     <ClInclude Include="Resources.hpp" />

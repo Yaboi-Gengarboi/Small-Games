@@ -1,37 +1,18 @@
 // RPGTest
 // Player.hpp
 // Created on 2022-10-04 by Justyn Durnford
-// Last modified on 2022-10-27 by Justyn Durnford
+// Last modified on 2022-11-09 by Justyn Durnford
 // Header file for the Player class.
 
 #pragma once
 
-#include "AnimatedSprite.hpp"
-using jlib::AnimatedSprite;
-
-#include "Direction.hpp"
-using jlib::Direction;
-
-#include "Time.hpp"
-using jlib::Duration;
+#include "Namespace.hpp"
 
 #include "Entity.hpp"
 
 #include "InputManager.hpp"
 
 #include "Room.hpp"
-
-#include <array>
-using std::array;
-
-#include <string>
-using std::string;
-using std::wstring;
-
-import Vector2;
-using jlib::Vector2f;
-using jlib::Vector2uz;
-using jlib::to_string;
 
 // 
 class Player : public IDObject, public Entity
@@ -44,6 +25,8 @@ class Player : public IDObject, public Entity
     Ptr<const Direction> currentDirection;
     Ptr<InputManager> inputManager;
     Ptr<Room> room;
+    FloatRect hitbox;
+    array<Collision, 4> vertexCollisionStates;
 
     // 
     Player();
@@ -66,6 +49,24 @@ class Player : public IDObject, public Entity
 
     // 
     void move(const Vector2f& vel, Duration dt);
+
+    // 
+    void setPosition(float pos_x, float pos_y);
+
+    // 
+    void setPosition(const Vector2f& pos);
+
+    // 
+    void setPositionToTile(size_t tile_x, size_t tile_y);
+
+    // 
+    void setPositionToTile(const Vector2uz& tile);
+
+    // 
+    void updateVertexCollisionStates();
+
+    // 
+    bool isMoving() const;
 
     // 
     void update(Duration dt);

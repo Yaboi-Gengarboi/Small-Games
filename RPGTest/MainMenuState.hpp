@@ -1,7 +1,7 @@
 // RPGTest
 // MainMenuState.hpp
 // Created on 2022-10-30 by Justyn Durnford
-// Last modified on 2022-11-01 by Justyn Durnford
+// Last modified on 2022-11-02 by Justyn Durnford
 // Header file for the MainMenuState class.
 
 #pragma once
@@ -54,5 +54,5 @@ class MainMenuState : public State
 	void render();
 
 	// 
-	void end();
+	void end(const path& folder);
 };

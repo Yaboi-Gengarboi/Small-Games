@@ -1,24 +1,12 @@
 // SRPGTest
 // GameConstants.hpp
 // Created on 2022-10-09 by Justyn Durnford
-// Last modified on 2022-10-28 by Justyn Durnford
+// Last modified on 2022-11-09 by Justyn Durnford
 // Header file defining several universal game constants.
 
 #pragma once
 
-#include "Direction.hpp"
-using jlib::Direction;
-
-#include "IntegerTypedefs.hpp"
-using jlib::u32;
-
-#include <array>
-using std::array;
-
-#include <thread>
-
-import Ptr;
-using jlib::Ptr;
+#include "Namespace.hpp"
 
 // Default window width.
 constexpr u32 WINDOW_WIDTH = 1536u;
@@ -48,7 +36,7 @@ constexpr float PLAYER_SPRITE_X_OFFSET = PLAYER_SPRITE_WIDTH / 2.0f;
 constexpr float PLAYER_SPRITE_Y_OFFSET = PLAYER_SPRITE_HEIGHT / 2.0f;
 
 // 
-const static u32 CPU_CORES = std::thread::hardware_concurrency();
+const static u32 CPU_CORES = thread::hardware_concurrency();
 
 // 
 const static array<Ptr<const Direction>, 8> directions =
@@ -62,3 +50,6 @@ const static array<Ptr<const Direction>, 8> directions =
 	Ptr<const Direction>(&Direction::West),
 	Ptr<const Direction>(&Direction::Northwest)
 };
+
+// 
+const static Vector2f VECTOR_ZERO = { 0.0f, 0.0f };

@@ -1,7 +1,7 @@
 // RPGTest
 // RPGGame.cpp
 // Created on 2022-09-30 by Justyn Durnford
-// Last modified on 2022-11-01 by Justyn Durnford
+// Last modified on 2022-11-02 by Justyn Durnford
 // Source file for the RPGGame class.
 
 #include "MainMenuState.hpp"
@@ -42,12 +42,12 @@ void RPGGame::update(Duration dt)
 
 		if (states.top()->next == State::NextState::EXIT)
 		{
-			states.top()->end();
+			states.top()->end(current_path() / L"data");
 			states.pop();
 		}
 		else if (states.top()->next == State::NextState::OVERWORLD)
 		{
-			states.top()->end();
+			states.top()->end(current_path() / L"data");
 			states.pop();
 			_window.display();
 

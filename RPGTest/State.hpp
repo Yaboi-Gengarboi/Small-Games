@@ -6,17 +6,7 @@
 
 #pragma once
 
-#include <SFML/Graphics/RenderWindow.hpp>
-using sf::RenderWindow;
-
-#include "IntegerTypedefs.hpp"
-using jlib::u8;
-
-#include "Time.hpp"
-using jlib::Duration;
-
-import Ptr;
-using jlib::Ptr;
+#include "Namespace.hpp"
 
 // 
 class State
@@ -49,5 +39,5 @@ class State
 	virtual void render() = 0;
 
 	// 
-	virtual void end() = 0;
+	virtual void end(const path& folder) = 0;
 };
