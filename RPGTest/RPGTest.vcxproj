@@ -175,7 +175,6 @@
     <ClCompile Include="..\..\JLIB\Game.cpp" />
     <ClCompile Include="..\..\JLIB\Gamepad.cpp" />
     <ClCompile Include="..\..\JLIB\Hexadecimal.cpp" />
-    <ClCompile Include="..\..\JLIB\InputBuffer.ixx" />
     <ClCompile Include="..\..\JLIB\LinearEquation1.ixx" />
     <ClCompile Include="..\..\JLIB\LinearEquation2.ixx" />
     <ClCompile Include="..\..\JLIB\LinearEquation3.ixx" />
@@ -197,16 +196,23 @@
     <ClCompile Include="..\..\JLIB\Vector3.ixx" />
     <ClCompile Include="..\..\JLIB\VectorEquation3.ixx" />
     <ClCompile Include="..\..\JLIB\VectorN.ixx" />
+    <ClCompile Include="Button.cpp" />
+    <ClCompile Include="ComboBox.cpp" />
+    <ClCompile Include="EditorState.cpp" />
     <ClCompile Include="IDClass.cpp" />
+    <ClCompile Include="InputBuffer.cpp" />
     <ClCompile Include="InputManager.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="MainMenuState.cpp" />
     <ClCompile Include="OverworldState.cpp" />
+    <ClCompile Include="PauseMenuState.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="Room.cpp" />
     <ClCompile Include="RPGGame.cpp" />
     <ClCompile Include="SFMLFunctions.cpp" />
     <ClCompile Include="State.cpp" />
+    <ClCompile Include="TransitionState.cpp" />
+    <ClCompile Include="UnsignedFloat.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\JLIB\Angle.hpp" />
@@ -227,19 +233,27 @@
     <ClInclude Include="..\..\JLIB\Mouse.hpp" />
     <ClInclude Include="..\..\JLIB\String.hpp" />
     <ClInclude Include="..\..\JLIB\Time.hpp" />
+    <ClInclude Include="Button.hpp" />
+    <ClInclude Include="ComboBox.hpp" />
+    <ClInclude Include="EditorState.hpp" />
     <ClInclude Include="Entity.hpp" />
+    <ClInclude Include="Enums.hpp" />
     <ClInclude Include="GameConstants.hpp" />
     <ClInclude Include="IDObject.hpp" />
+    <ClInclude Include="InputBuffer.hpp" />
     <ClInclude Include="InputManager.hpp" />
     <ClInclude Include="MainMenuState.hpp" />
     <ClInclude Include="Namespace.hpp" />
     <ClInclude Include="OverworldState.hpp" />
+    <ClInclude Include="PauseMenuState.hpp" />
     <ClInclude Include="Player.hpp" />
     <ClInclude Include="Resources.hpp" />
     <ClInclude Include="Room.hpp" />
     <ClInclude Include="RPGGame.hpp" />
     <ClInclude Include="SFMLFunctions.hpp" />
     <ClInclude Include="State.hpp" />
+    <ClInclude Include="TransitionState.hpp" />
+    <ClInclude Include="UnsignedFloat.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

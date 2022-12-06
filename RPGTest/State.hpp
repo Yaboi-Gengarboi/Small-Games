@@ -1,12 +1,13 @@
 // RPGTest
 // State.hpp
 // Created on 2022-09-30 by Justyn Durnford
-// Last modified on 2022-11-01 by Justyn Durnford
+// Last modified on 2022-12-05 by Justyn Durnford
 // Header file for the State class.
 
 #pragma once
 
 #include "Namespace.hpp"
+#include "InputManager.hpp"
 
 // 
 class State
@@ -15,9 +16,14 @@ class State
 
 	enum NextState : u8
 	{
-		NONE = 0,
-		EXIT = 1,
-		OVERWORLD = 2
+		NONE      = 0,
+		EXIT      = 1,
+		END       = 2,
+		SAVE      = 3,
+		NEWGAME   = 4,
+		MAINMENU  = 5,
+		OVERWORLD = 6,
+		PAUSEMENU = 7
 	};
 
 	Ptr<RenderWindow> window;
@@ -33,7 +39,7 @@ class State
 	virtual ~State() = default;
 
 	// 
-	virtual void update(Duration dt) = 0;
+	virtual void update(Duration dt, InputManager& input_manager) = 0;
 
 	// 
 	virtual void render() = 0;

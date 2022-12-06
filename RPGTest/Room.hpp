@@ -1,21 +1,20 @@
 // RPGTest
 // Room.hpp
 // Created on 2022-10-04 by Justyn Durnford
-// Last modified on 2022-11-09 by Justyn Durnford
+// Last modified on 2022-11-12 by Justyn Durnford
 // Header file for the Room class.
 
 #pragma once
 
+#include "Enums.hpp"
 #include "Namespace.hpp"
-
 #include "IDObject.hpp"
 
-enum Collision : u8
+// 
+struct LoadZone
 {
-	EMPTY = 0,
-	LOADZONE = 1,
-	SOLID = 2,
-	WATER = 3
+	FloatRect box;
+	u16 nextRoom;
 };
 
 // 
@@ -27,6 +26,7 @@ class Room : public IDObject
 	Sprite sprite;
 	Matrix<u8> collision;
 	Vector2f startPos;
+	vector<LoadZone> loadZones;
 
 	// Default constructor.
 	Room() = default;
@@ -57,6 +57,12 @@ class Room : public IDObject
 };
 
 extern unordered_map<u16, Room> room_arr;
+
+// 
+bool is_tile_empty(Collision collision, TravelMethod travel_method);
+
+// 
+bool is_tile_solid(Collision collision, TravelMethod travel_method);
 
 // 
 bool load_room(u16 id, const path& folder);

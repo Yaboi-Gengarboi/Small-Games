@@ -1,29 +1,12 @@
 // RPGTest
 // Room.cpp
 // Created on 2022-10-04 by Justyn Durnford
-// Last modified on 2022-11-02 by Justyn Durnford
+// Last modified on 2022-11-16 by Justyn Durnford
 // Source file for the Room class.
 
 #include "GameConstants.hpp"
 #include "Room.hpp"
 #include "SFMLFunctions.hpp"
-
-#include <fstream>
-using std::ifstream;
-
-#include <iostream>
-using std::cout;
-using std::cerr;
-using std::wcout;
-using std::wcerr;
-
-#include <string>
-using std::string;
-using std::wstring;
-using std::getline;
-using std::stoi;
-using std::to_string;
-using std::to_wstring;
 
 Room::Room(u16 new_id, const path& folder) : IDObject(new_id, "")
 {
@@ -106,17 +89,6 @@ Room::Room(u16 new_id, const path& folder) : IDObject(new_id, "")
 
 	collision = Matrix<u8>(rows, cols);
 
-	string texturefile(folder.string() + "\\rooms\\" + to_string(new_id) + "\\texture.png");
-	if (!exists(texturefile))
-	{
-		cerr << "ERROR: Could not locate file: " << texturefile << '\n';
-		exit(1);
-	}
-
-	create_texture(texture, texturefile);
-	sprite.setTexture(texture);
-	sprite.setScale(SCALE, SCALE);
-
 	u8 tile = 0;
 
 	for (size_t row_i = 0; row_i < collision.rowCount(); ++row_i)
@@ -138,6 +110,26 @@ Room::Room(u16 new_id, const path& folder) : IDObject(new_id, "")
 		cout  << '\n';
 		#endif // #ifdef _DEBUG
 	}
+
+	try
+	{
+
+	}
+	catch (...)
+	{
+
+	}
+
+	string texturefile(folder.string() + "\\rooms\\" + to_string(new_id) + "\\texture.png");
+	if (!exists(texturefile))
+	{
+		cerr << "ERROR: Could not locate file: " << texturefile << '\n';
+		exit(1);
+	}
+
+	create_texture(texture, texturefile);
+	sprite.setTexture(texture);
+	sprite.setScale(SCALE, SCALE);
 }
 
 Room::Room(Room&& other) noexcept
@@ -187,6 +179,71 @@ Collision Room::getTileCollision(const Vector2f& pos) const
 }
 
 unordered_map<u16, Room> room_arr;
+
+bool is_tile_empty(Collision collision, TravelMethod travel_method)
+{
+	switch (travel_method)
+	{
+		case TravelMethod::WALKING:
+
+			switch (collision)
+			{
+				case Collision::EMPTY:
+					return true;
+				break;
+
+				case Collision::LOADZONE:
+					return true;
+				break;
+
+				case Collision::SOLID:
+					return false;
+				break;
+
+				case Collision::WATER:
+					return false;
+				break;
+
+				default: break;
+			}
+
+		break;
+
+		case TravelMethod::RUNNING:
+
+			switch (collision)
+			{
+				case Collision::EMPTY:
+				return true;
+				break;
+
+				case Collision::LOADZONE:
+				return true;
+				break;
+
+				case Collision::SOLID:
+				return false;
+				break;
+
+				case Collision::WATER:
+				return false;
+				break;
+
+				default: break;
+			}
+
+		break;
+
+		default: break;
+	}
+
+	return false;
+}
+
+bool is_tile_solid(Collision collision, TravelMethod travel_method)
+{
+	return !is_tile_empty(collision, travel_method);
+}
 
 bool load_room(u16 id, const path& folder)
 {

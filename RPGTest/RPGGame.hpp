@@ -1,13 +1,12 @@
 // RPGTest
 // RPGGame.hpp
 // Created on 2022-09-30 by Justyn Durnford
-// Last modified on 2022-11-01 by Justyn Durnford
+// Last modified on 2022-12-05 by Justyn Durnford
 // Header file for the RPGGame class.
 
 #pragma once
 
-#include <SFML/Window/Event.hpp>
-using sf::Event;
+#include "Namespace.hpp"
 
 #include "Game.hpp"
 using jlib::Game;
@@ -17,28 +16,6 @@ using jlib::Game;
 #include "InputManager.hpp"
 
 #include "State.hpp"
-
-#include "Time.hpp"
-using jlib::Duration;
-using jlib::TimePoint;
-
-#include <filesystem>
-using std::filesystem::path;
-using std::filesystem::current_path;
-using std::filesystem::exists;
-
-#include <memory>
-using std::unique_ptr;
-using std::make_unique;
-
-#include <stack>
-using std::stack;
-
-#include <thread>
-using std::thread;
-
-#include <vector>
-using std::vector;
 
 class RPGGame : public Game
 {
@@ -50,9 +27,6 @@ class RPGGame : public Game
 
 	// 
 	void render();
-
-	// 
-	void loadOverworldState();
 
 	public:
 
@@ -66,6 +40,15 @@ class RPGGame : public Game
 	RPGGame(u32 window_width, u32 window_height, const sf::String& title,
 			u32 style = jlib::nonScalableWindowStyle,
 			const sf::ContextSettings& settings = sf::ContextSettings());
+
+	// 
+	void createNewSaveData(const path& folder);
+
+	// 
+	void readSaveData(const path& folder);
+
+	// 
+	void writeSaveData(const path& folder);
 
 	// 
 	void run();

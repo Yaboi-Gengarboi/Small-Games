@@ -1,7 +1,7 @@
 // RPGTest
 // InputManager.cpp
 // Created on 2022-09-30 by Justyn Durnford
-// Last modified on 2022-11-01 by Justyn Durnford
+// Last modified on 2022-12-05 by Justyn Durnford
 // Source file for the InputManager class.
 
 #ifndef NOMINMAX
@@ -9,17 +9,11 @@
 #endif // #ifndef NOMINMAX
 
 #include "InputManager.hpp"
-
-#include "Mouse.hpp"
-using jlib::get_mouse_position;
-
-#include <algorithm>
-using std::max;
-using std::shift_right;
+#include "Resources.hpp"
 
 void InputManager::_updateKeyStates()
 {
-	for (std::pair<const Keyboard::Key, InputBuffer<u8>>& pair : keyStates)
+	for (std::pair<const Keyboard::Key, InputBuffer>& pair : keyStates)
 	{
 		if (Keyboard::isKeyPressed(pair.first))
 			keyStates[pair.first].update(true);
@@ -30,7 +24,7 @@ void InputManager::_updateKeyStates()
 
 void InputManager::_updateButtonStates()
 {
-	for (std::pair<const Gamepad::Button, InputBuffer<u8>>& pair : buttonStates)
+	for (std::pair<const Gamepad::Button, InputBuffer>& pair : buttonStates)
 	{
 		if (controller.isButtonPressed(pair.first))
 			buttonStates[pair.first].update(true);
@@ -41,30 +35,7 @@ void InputManager::_updateButtonStates()
 
 InputManager::InputManager()
 {
-	keyStates[Keyboard::Key::W] = 0;
-	keyStates[Keyboard::Key::A] = 0;
-	keyStates[Keyboard::Key::S] = 0;
-	keyStates[Keyboard::Key::D] = 0;
-	keyStates[Keyboard::Key::LShift] = 0;
-	keyStates[Keyboard::Key::LControl] = 0;
-	keyStates[Keyboard::Key::Tab] = 0;
-	keyStates[Keyboard::Key::Escape] = 0;
-	keyStates[Keyboard::Key::Enter] = 0;
-
-	buttonStates[Gamepad::Button::A] = 0;
-	buttonStates[Gamepad::Button::B] = 0;
-	buttonStates[Gamepad::Button::X] = 0;
-	buttonStates[Gamepad::Button::Y] = 0;
-	buttonStates[Gamepad::Button::DPadUp] = 0;
-	buttonStates[Gamepad::Button::DPadDown] = 0;
-	buttonStates[Gamepad::Button::DPadLeft] = 0;
-	buttonStates[Gamepad::Button::DPadRight] = 0;
-	buttonStates[Gamepad::Button::LShoulder] = 0;
-	buttonStates[Gamepad::Button::RShoulder] = 0;
-	buttonStates[Gamepad::Button::LThumbstick] = 0;
-	buttonStates[Gamepad::Button::RThumbstick] = 0;
-	buttonStates[Gamepad::Button::Start] = 0;
-	buttonStates[Gamepad::Button::Back] = 0;
+	reset();
 }
 
 void InputManager::setControllerDeadZones(float lx_dz, float ly_dz, float rx_dz, float ry_dz)
@@ -78,7 +49,7 @@ bool InputManager::getCurrentKeyState(Keyboard::Key key)
 	return keyStates[key].isActive();
 }
 
-u8 InputManager::getKeyState(Keyboard::Key key)
+u16 InputManager::getKeyState(Keyboard::Key key)
 {
 	return keyStates[key].getValue();
 }
@@ -88,7 +59,7 @@ bool InputManager::getCurrentButtonState(Gamepad::Button button)
 	return buttonStates[button].isActive();
 }
 
-u8 InputManager::getButtonState(Gamepad::Button button)
+u16 InputManager::getButtonState(Gamepad::Button button)
 {
 	return buttonStates[button].getValue();
 }
@@ -126,13 +97,50 @@ Ptr<const Direction> InputManager::getCurrentDirection()
 	return nullptr;
 }
 
-void InputManager::update(Ptr<RenderWindow> window)
+void InputManager::sleepFor(Duration secs)
 {
-	if (window->hasFocus())
+	sleepStart = resources->main_clock.getCurrentTimePoint();
+	sleepTime = secs;
+}
+
+void InputManager::update(RenderWindow& window)
+{
+	if (window.hasFocus())
 	{
-		controller.update();
-		_updateKeyStates();
-		_updateButtonStates();
-		mousePosition = get_mouse_position(*window);
+		if ((resources->main_clock.getCurrentTimePoint() - sleepStart) >= sleepTime)
+		{
+			controller.update();
+			_updateKeyStates();
+			_updateButtonStates();
+			mousePosition = window.mapPixelToCoords(Mouse::getPosition(window), window.getView());
+		}
 	}
+}
+
+void InputManager::reset()
+{
+	keyStates[Keyboard::Key::W].setValue(0);
+	keyStates[Keyboard::Key::A].setValue(0);
+	keyStates[Keyboard::Key::S].setValue(0);
+	keyStates[Keyboard::Key::D].setValue(0);
+	keyStates[Keyboard::Key::LShift].setValue(0);
+	keyStates[Keyboard::Key::LControl].setValue(0);
+	keyStates[Keyboard::Key::Tab].setValue(0);
+	keyStates[Keyboard::Key::Escape].setValue(0);
+	keyStates[Keyboard::Key::Enter].setValue(0);
+
+	buttonStates[Gamepad::Button::A].setValue(0);
+	buttonStates[Gamepad::Button::B].setValue(0);
+	buttonStates[Gamepad::Button::X].setValue(0);
+	buttonStates[Gamepad::Button::Y].setValue(0);
+	buttonStates[Gamepad::Button::DPadUp].setValue(0);
+	buttonStates[Gamepad::Button::DPadDown].setValue(0);
+	buttonStates[Gamepad::Button::DPadLeft].setValue(0);
+	buttonStates[Gamepad::Button::DPadRight].setValue(0);
+	buttonStates[Gamepad::Button::LShoulder].setValue(0);
+	buttonStates[Gamepad::Button::RShoulder].setValue(0);
+	buttonStates[Gamepad::Button::LThumbstick].setValue(0);
+	buttonStates[Gamepad::Button::RThumbstick].setValue(0);
+	buttonStates[Gamepad::Button::Start].setValue(0);
+	buttonStates[Gamepad::Button::Back].setValue(0);
 }

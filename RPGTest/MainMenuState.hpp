@@ -1,31 +1,14 @@
 // RPGTest
 // MainMenuState.hpp
 // Created on 2022-10-30 by Justyn Durnford
-// Last modified on 2022-11-02 by Justyn Durnford
+// Last modified on 2022-12-03 by Justyn Durnford
 // Header file for the MainMenuState class.
 
 #pragma once
 
-#include "InputManager.hpp"
+#include "Button.hpp"
+#include "ComboBox.hpp"
 #include "State.hpp"
-
-#include <SFML/Graphics/Sprite.hpp>
-using sf::Sprite;
-
-#include <SFML/Graphics/Texture.hpp>
-using sf::Texture;
-
-#include <filesystem>
-using std::filesystem::path;
-using std::filesystem::exists;
-
-#include <string>
-using std::string;
-using std::wstring;
-using std::getline;
-using std::stoi;
-using std::to_string;
-using std::to_wstring;
 
 class MainMenuState : public State
 {
@@ -33,22 +16,25 @@ class MainMenuState : public State
 
 	Texture backgroundTexture;
 	Sprite backgroundSprite;
-	Ptr<InputManager> inputManager;
+	Button newGameButton;
+	Button loadGameButton;
+	Button exitGameButton;
+	ComboBox testComboBox;
 
 	// Default constructor.
 	MainMenuState() = default;
 
 	// Constructor.
-	MainMenuState(const path& folder, Ptr<RenderWindow> new_window, Ptr<InputManager> new_inputManager);
+	MainMenuState(const path& folder, Ptr<RenderWindow> new_window);
 
 	// Destructor.
-	~MainMenuState() = default;
+	~MainMenuState();
 
 	// 
 	static void loadFail(const path& filepath, const wstring& message);
 
 	// 
-	void update(Duration dt);
+	void update(Duration dt, InputManager& input_manager);
 
 	// 
 	void render();

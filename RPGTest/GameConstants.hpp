@@ -1,7 +1,7 @@
 // SRPGTest
 // GameConstants.hpp
 // Created on 2022-10-09 by Justyn Durnford
-// Last modified on 2022-11-09 by Justyn Durnford
+// Last modified on 2022-11-14 by Justyn Durnford
 // Header file defining several universal game constants.
 
 #pragma once
@@ -19,21 +19,6 @@ constexpr float SCALE = 8.0f;
 
 // 
 constexpr float TILE_LENGTH = 16.0f;
-
-// 
-constexpr float PLAYER_WALK_SPEED = TILE_LENGTH * SCALE * 4.0f;
-
-// 
-constexpr float PLAYER_SPRITE_WIDTH = 128.0f;
-
-// 
-constexpr float PLAYER_SPRITE_HEIGHT = 128.0f;
-
-// 
-constexpr float PLAYER_SPRITE_X_OFFSET = PLAYER_SPRITE_WIDTH / 2.0f;
-
-// 
-constexpr float PLAYER_SPRITE_Y_OFFSET = PLAYER_SPRITE_HEIGHT / 2.0f;
 
 // 
 const static u32 CPU_CORES = thread::hardware_concurrency();

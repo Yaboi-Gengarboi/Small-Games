@@ -1,7 +1,7 @@
 // RPGTest
 // Player.hpp
 // Created on 2022-10-04 by Justyn Durnford
-// Last modified on 2022-11-09 by Justyn Durnford
+// Last modified on 2022-11-21 by Justyn Durnford
 // Header file for the Player class.
 
 #pragma once
@@ -9,9 +9,8 @@
 #include "Namespace.hpp"
 
 #include "Entity.hpp"
-
+#include "Enums.hpp"
 #include "InputManager.hpp"
-
 #include "Room.hpp"
 
 // 
@@ -23,17 +22,22 @@ class Player : public IDObject, public Entity
     array<AnimatedSprite, 8> walkingSprites;
     Ptr<const Direction> lastDirection;
     Ptr<const Direction> currentDirection;
-    Ptr<InputManager> inputManager;
     Ptr<Room> room;
     FloatRect hitbox;
-    array<Collision, 4> vertexCollisionStates;
+    array<Collision, 4> vertexStates;
+    TravelMethod travelMethod;
+
+    static const float WALK_SPEED;
+    static const float RUN_SPEED;
+    static const float SPRITE_WIDTH;
+    static const float SPRITE_HEIGHT;
 
     // 
     Player();
 
     // 
     Player(u16 new_id, const string& new_name, const Vector2f& new_position, const Vector2f& new_velocity, 
-           Ptr<const Direction> new_direction, Ptr<InputManager> new_inputManager, Ptr<Room> new_room);
+           Ptr<const Direction> new_direction, Ptr<Room> new_room);
 
     // 
     static void loadFail(const path& filepath, const wstring& message);
@@ -43,6 +47,9 @@ class Player : public IDObject, public Entity
 
     // 
     Vector2uz getTilePosition() const;
+
+    //
+    void updateVertextStates();
 
     // 
     void move(float vel_x, float vel_y, Duration dt);
@@ -63,14 +70,13 @@ class Player : public IDObject, public Entity
     void setPositionToTile(const Vector2uz& tile);
 
     // 
-    void updateVertexCollisionStates();
-
-    // 
     bool isMoving() const;
 
     // 
-    void update(Duration dt);
+    void update(Duration dt, InputManager& input_manager);
 
     // 
     void render(RenderWindow& window);
 };
+
+extern shared_ptr<Player> player;
